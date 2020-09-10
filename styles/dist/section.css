@@ -1,0 +1,25 @@
+.what {
+  text-align: center;
+}
+.what h1 {
+  padding-top: clamp(10vh, 10vh, 10vh);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-size: 50px;
+  margin: 0;
+}
+.what h1 span {
+  color: #f5a832;
+}
+.what img {
+  height: 40px;
+  width: 40px;
+}
+.what p {
+  color: #646464;
+  padding: 0 1rem;
+}
+.what a {
+  text-decoration: none;
+}

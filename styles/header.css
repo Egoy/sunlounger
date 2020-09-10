@@ -1,0 +1,76 @@
+header {
+  position: relative;
+  height: auto;
+}
+
+header .hero {
+  color: #f5a832;
+  margin: 0 20px;
+  z-index: 100;
+}
+
+header .hero h1 {
+  font-weight: 700;
+  font-size: clamp(64px, 2.5vw, 4rem);
+}
+
+header .hero h3 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(18px, 2.5vw, 1.5rem);
+  margin-top: -30px;
+}
+
+header .hero p {
+  font-size: clamp(18px, 2.5vw, 1.5rem);
+  line-height: 1rem;
+}
+
+header .hero__button {
+  border-radius: 5px;
+  min-height: 42px;
+  min-width: 140px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .hero__button:hover {
+  background: #bebebe;
+}
+
+header .hero img {
+  position: absolute;
+  width: 80%;
+  right: 0;
+  z-index: 100;
+  max-width: 700px;
+}
+
+.swoop {
+  height: auto;
+  position: relative;
+}
+
+.swoop img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=header.css.map */
