@@ -418,30 +418,53 @@ main {
   }
 }
 
-.save {
+.ebook {
+  background: #333399;
+  color: #FFFFFF;
+  padding: 1rem 0;
+}
+
+.ebook__head {
   text-align: center;
 }
 
-.save__heading {
-  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
-}
-
-.save__heading span {
-  color: #333399;
-  text-transform: uppercase;
-}
-
-.ebook-head {
-  text-align: center;
-}
-
-.ebook-main-img {
-  width: 400px;
-}
-
-.ebook-main-img img {
+.ebook-main {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  width: 85%;
+  margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ebook-main img {
   max-width: 400px;
-  margin: auto;
+}
+
+.ebook-main .ebook-text {
+  width: 500px;
+}
+
+.ebook-main .ebook-text p {
+  text-align: justify;
+  line-height: 2;
+  margin-bottom: 1em;
+}
+
+.ebook-main .ebook-text a {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
