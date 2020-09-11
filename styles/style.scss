@@ -12,7 +12,9 @@ body {
   margin: 0;
   line-height: 1.6;
   /* fallback for old browsers */
-  background: linear-gradient(45.34deg, rgb(115, 101, 194) 5.66%, $clr-sub 94.35%);
+  background: linear-gradient(45.34deg,
+      rgb(115, 101, 194) 5.66%,
+      $clr-sub 94.35%);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: "Open Sans", serif;
 }
@@ -25,7 +27,9 @@ img {
 h1,
 h2,
 h3,
-p {
+p,
+ul,
+li {
   margin: 0;
 }
 
@@ -88,7 +92,6 @@ section {
   font-weight: 700;
 }
 
-
 .swoop {
   position: absolute;
   bottom: -2px;
@@ -103,10 +106,6 @@ section {
   text-align: left;
   padding: 2em 0;
   position: relative;
-}
-
-main {
-  padding: 3rem 0;
 }
 
 .what {
@@ -177,16 +176,13 @@ main {
   }
 }
 
-
 .laptop,
 .phone {
   height: 250px;
   width: 100%;
 }
 
-
-
-@media (min-width: 375px) {
+@media (min-width: 320px) {
   .mockup-container {
     position: relative;
   }
@@ -194,7 +190,7 @@ main {
   .phone {
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 80px;
   }
 }
 
@@ -213,9 +209,7 @@ main {
 }
 
 @media (min-width: 1024px) {
-
-  .laptop,
-    {
+  .laptop {
     height: 600px;
     width: 100%;
   }
@@ -234,7 +228,6 @@ main {
   &__head {
     text-align: center;
   }
-
 }
 
 .ebook-main {
@@ -255,7 +248,6 @@ main {
   .ebook-text {
     width: 500px;
 
-
     p {
       text-align: justify;
       line-height: 2;
@@ -266,5 +258,37 @@ main {
       color: black;
     }
   }
+}
 
+footer {
+  background: white;
+  height: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .footer-logo {
+    height: 70px;
+    width: 70px;
+  }
+
+  .footer-sm {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        margin: 0 1rem;
+
+        i {
+          font-size: clamp(2rem, calc(1rem + 1vh), 3rem);
+          color: $clr-text;
+        }
+      }
+    }
+  }
 }

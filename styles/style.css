@@ -220,7 +220,9 @@ img {
 h1,
 h2,
 h3,
-p {
+p,
+ul,
+li {
   margin: 0;
 }
 
@@ -299,10 +301,6 @@ section {
   text-align: left;
   padding: 2em 0;
   position: relative;
-}
-
-main {
-  padding: 3rem 0;
 }
 
 .what {
@@ -384,14 +382,14 @@ main {
   width: 100%;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 320px) {
   .mockup-container {
     position: relative;
   }
   .phone {
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 80px;
   }
 }
 
@@ -466,5 +464,45 @@ main {
 
 .ebook-main .ebook-text a {
   color: black;
+}
+
+footer {
+  background: white;
+  height: 100%;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-logo {
+  height: 70px;
+  width: 70px;
+}
+
+footer .footer-sm ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-sm ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+footer .footer-sm ul li i {
+  font-size: clamp(2rem, calc(1rem + 1vh), 3rem);
+  color: #646464;
 }
 /*# sourceMappingURL=style.css.map */
